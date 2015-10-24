@@ -4,7 +4,8 @@
 			"Level 0": {"No spells known. Have you tried shooting arrows at it while doing a backflip?": ""}
 		},
 		"Jeorg": {
-			"Level 1": {"Bless": "", "Command": "", "Cure Wounds": "", "Wrathful Smite": ""} 
+			"Level 0": {"None": ""},
+			"Level 1": {"Bless": "", "Command": "", "Cure Wounds": "", "Wrathful Smite": ""}
 		},
 		"Tor": {
 			"Level 0": {"Eldritch Blast": "", "Chill Touch": "", "Thaumaturgy": ""},
