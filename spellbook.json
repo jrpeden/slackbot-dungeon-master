@@ -4,7 +4,7 @@
 			"Level 0": {"No spells known. Have you tried shooting arrows at it while doing a backflip?": ""}
 		},
 		"Jack": {
-			"Level 0": {"No spells known. Welp.": ""} 
+			"Level 1": {"Bless": "", "Command": "", "Cure Wounds": "", "Wrathful Smite": ""} 
 		},
 		"Tor": {
 			"Level 0": {"Eldritch Blast": "", "Chill Touch": "", "Thaumaturgy": ""},
@@ -52,6 +52,16 @@
 			"Description": "You speak a one-word command to a creature you can see within range. The target must succeed on a Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn’t understand your language, or if your command is directly harmful to it. Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the DM determines how the target behaves. If the target can’t follow your command, the spell ends. Approach: The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you. Drop: The target drops whatever it is holding and then ends its turn. Flee: The target spends its turn moving away from you by the fastest available means. Grovel: The target falls prone and then ends its turn. Halt: The target doesn’t move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.",
 			"At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, you can affect one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them."
 		},
+		"Cure Wounds": {
+			"Level": "1",
+			"Type": "Evocation",
+			"Casting Time": "1 action",
+			"Range": "Touch",
+			"Components": "V, S",
+			"Duration": "Instantaneous",
+			"Description": "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+			"At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
+		},
 		"Eldritch Blast": {
 			"Level": "0",
 			"Type": "Evocation",
@@ -64,12 +74,12 @@
 		},
 		"Thaumaturgy": {
 			"Level": "0",
-			"Type": "",
-			"Casting Time": "",
-			"Range": "",
-			"Components": "",
-			"Duration": "",
-			"Description": "",
+			"Type": "Transmutation",
+			"Casting Time": "1 action",
+			"Range": "30 feet",
+			"Components": "V",
+			"Duration": "Up to 1 minute",
+			"Description": "You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range: Your voice booms up to three times as loud as normal for 1 minute. You cause flames to flicker, brighten, dim, or change color for 1 minute. You cause harmless tremors in the ground for 1 minute. You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers. You instantaneously cause an unlocked door or window to fly open or slam shut. You alter the appearance of your eyes for 1 minute. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.",
 			"At Higher Levels": ""
 		},
 		"Witch Bolt": {
@@ -81,6 +91,16 @@
 			"Duration": "Concentration, up to 1 minute",
 			"Description": "A beam of crackling, blue energy lances out toward a creature within range, forming a sustained arc of lightning between you and the target. Make a ranged spell attack against that creature. On a hit, the target takes 1d12 lightning damage, and on each of your turns for the duration, you can use your action to deal 1d12 lightning damage to the target automatically. The spell ends if you use your action to do anything else. The spell also ends if the target is ever outside the spell’s range or if it has total cover from you.",
 			"At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for each slot level above 1st."
+		},
+		"Wrathful Smite": {
+			"Level": "1",
+			"Type": "Evocation",
+			"Casting Time": "1 bonus action",
+			"Range": "Self",
+			"Components": "V",
+			"Duration": "Concentration, up to 1 minute",
+			"Description": "The next time you hit with a melee weapon attack during this spell’s duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a Wisdom saving throw or be frightened of you until the spell ends. As an action, the creature can make a Wisdom check against your spell save DC to steel its resolve and end this spell.",
+			"At Higher Levels": "When you cast this spell using a spell slot of 2nd level or higher, the extra damage increases by 1d6 for each level above 1st."
 		}
 	}
 }
