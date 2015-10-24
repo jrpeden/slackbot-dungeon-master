@@ -24,7 +24,7 @@ module.exports = function (req, res, next) {
   //define individual command behavior
   switch (command) {
     case "Derfin":
-    case "Jack":
+    case "Jeorg":
     case "Tor":
       characterOutput(command);
       break;
