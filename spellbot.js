@@ -1,3 +1,7 @@
+// A chatbot for Slack that provides spell information for my D&D group
+// By John Rudd Peden
+// With credit to Taylor Brennan's guide at http://www.sitepoint.com/getting-started-slack-bots/
+
 var request = require('request');
 var fs = require('fs');
 
@@ -61,7 +65,7 @@ module.exports = function (req, res, next) {
   botPayload.channel = req.body.channel_id;
   botPayload.icon_emoji = ':fireworks:';
 
-  // send dice roll
+  // send payload
   send(botPayload, function (error, status, body) {
     if (error) {
       return next(error);
@@ -77,7 +81,7 @@ module.exports = function (req, res, next) {
 }
 
 function send (payload, callback) {
-  var path = process.env.INCOMING_WEBHOOK_PATH;
+  var path = process.env.INCOMING_WEBHOOK_PATH; // saved locally for security
   var uri = 'https://hooks.slack.com/services' + path;
 
   request({
